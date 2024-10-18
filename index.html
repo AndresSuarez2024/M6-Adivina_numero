@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego - Adivina el Número</title>
+    <link rel="stylesheet" href="style.css"> <!-- Enlace al archivo CSS -->
+</head>
+<body>
+    <div id="game-container">
+        <h1>¡Adivina el Número!</h1>
+        <p>Número secreto: <span id="secret-number">?</span></p>
+        <p id="hint-text">Empezamos la partida!</p>
+        <p>Jugadas: <span id="attempts">20</span></p>
+        <p>Total puntos: <span id="best-score">0</span></p>
+        <input type="number" id="guess" placeholder="Introduce un número" min="1" max="10">
+        <button id="submit-guess">Probar</button>
+        <button id="restart-button" disabled>Reinicia!</button>
+    </div>
+
+    <script src="script.js"></script> <!-- Enlace al archivo JS -->
+</body>
+</html>
